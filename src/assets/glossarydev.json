@@ -1,0 +1,147 @@
+{
+    "glossary": [
+        {
+            "word" : "Abandoned",
+            "def" : "No longer in use; a length, section, or portion of a collection system no longer in service and left in place, underground. For example, when a house or building is razed or removed, the service connection may be left open and unused.",
+            "show" : true
+        },
+
+        {
+            "word" : "Abatement",
+            "def" : "Putting an end to an undesirable or unlawful condition affecting the wastewater collection system. A property owner found to have inflow sources connected to the collection system may be issued a notice of abatement. Such notices will usually describe the violation, suggest corrective measures, and grant a period of time for compliance.",
+            "show" : true
+        },
+
+        {
+            "word" : "ABS",
+            "def" : "Alkyl Benzene Sulfonate. A type of surfactant, or surface active agent, present in synthetic detergents in the United States before 1965. ABS was especially troublesome because it caused foaming and resisted breakdown by biological treatment processes. ABS has been replaced in detergents by linear alkyl sulfonate (LAS), which is biodegradable.",
+            "show" : true
+        },
+
+        {
+            "word" : "Absorption",
+            "def" : "The taking in or soaking up of one substance into the body of another by molecular or chemical action (as tree roots absorb dissolved nutrients in the soil).",
+            "show" : true
+        },
+
+        {
+            "word" : "Absorption Capacity",
+            "def" : "The amount of liquid a solid material can absorb. Sand, as an example, can hold approximately one-third of its volume in water, or three cubic feet of dry sand can contain one cubic foot of water. A denser soil, such as clay, can hold much less water and thus has a lower absorption capacity.",
+            "show" : true
+        },
+
+        {
+            "word" : "Absorption Rate",
+            "def" : "The speed at which a measured amount of solid material can absorb a measured amount of liquid. Under pressure, water can infiltrate a given volume of gravel very rapidly. The water will penetrate (or be absorbed by) sand more slowly and will take even longer to saturate the same amount of clay.",
+            "show" : true
+        },
+
+        {
+            "word" : "Accountability",
+            "def" : "When a manager gives power/responsibility to an employee, the employee ensures that the manager is informed of results or events.",
+            "show" : true
+        },
+
+        {
+            "word" : "Accuracy",
+            "def" : "How closely an instrument measures the true or actual value of the process variable being measured or sensed.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acid",
+            "def" : "A substance that tends to lose a proton. A substance that dissolves in water and releases hydrogen ions. A substance containing hydrogen ion that may be replaced by metals to form salts. A substance that is corrosive.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acid Rain",
+            "def" : "Precipitation that has been rendered (made) acidic by airborne pollutants.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acid Regression Stage",
+            "def" : "A stage of anaerobic digestion during which the production of volatile acids is reduced and acetate and ammonia compounds form, causing the pH to increase.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acidic",
+            "def" : "The condition of water or soil that contains a sufficient amount of acid substances to lower the pH below 7.0.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acidification",
+            "def" : "The addition of an acid (usually nitric or sulfuric) to a sample to lower the pH below 2.0. The purpose of acidification is to fix a sample so it will not change until it is analyzed.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acidity",
+            "def" : "The capacity of water or wastewater to neutralize bases. Acidity is expressed in milligrams per liter of equivalent calcium carbonate. Acidity is not the same as pH because water does not have to be strongly acidic (low pH) to have a high acidity. Acidity is a measure of how much base must be added to a liquid to raise the pH to 8.2.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acre-foot",
+            "def" : "A volume of water that covers one acre to a depth of one foot, or 43,560 cubic feet (1,233.5 cubic meters).",
+            "show" : true
+        },
+
+        {
+            "word" : "Activated Alumina",
+            "def" : "A charged form of aluminum, used with a synthetic, porous media in an ion exchange adsorption process to remove charged contaminants.",
+            "show" : true
+        },
+        
+        {
+            "word" : "Activated Carbon",
+            "def" : "Adsorptive particles or granules of carbon usually obtained by heating carbon (such as wood). These particles or granules have a high capacity to selectively remove certain trace and soluble materials from water.",
+            "show" : true
+        },
+
+        {
+            "word" : "Activated Sludge",
+            "def" : "Sludge particles produced in raw or settled wastewater (primary effluent) by the growth of organisms in aeration tanks in the presence of dissolved oxygen. These sludge particles contain living organisms that feed on the incoming wastewater.",
+            "show" : true
+        },
+
+        {
+            "word" : "Activated Sludge Process",
+            "def" : "A biological wastewater treatment process that speeds up the decomposition of wastes in the wastewater being treated. Activated sludge is added to wastewater and the mixture (mixed liquor) is aerated and agitated. After some time in the aeration tank, the activated sludge is allowed to settle out by sedimentation and is disposed of (wasted) or reused (returned to the aeration tank) as needed. The remaining wastewater then undergoes more treatment.",
+            "show" : true
+        },
+
+        {
+            "word" : "Acute Health Effect",
+            "def" : "An adverse effect on a human or animal body, with symptoms developing rapidly.",
+            "show" : true
+        },
+
+        {
+            "word" : "Adsorbate",
+            "def" : "The material being removed by the adsorption process.",
+            "show" : true
+        },
+
+        {
+            "word" : "Adsorbent",
+            "def" : "The material (activated carbon) that is responsible for removing the undesirable substance in the adsorption process.",
+            "show" : true
+        },
+
+        {
+            "word" : "Adsorption",
+            "def" : "The gathering of a gas, liquid, or dissolved substance on the surface or interface zone of another material.",
+            "show" : true
+        },
+
+        {
+            "word" : "Advanced Metering Infrastructure (AMI)",
+            "def" : "Refers to a system that measures, collects, and analyzes energy usage while interacting with advanced devices such as water meters through various communication media, either on demand or on predefined schedules. This infrastructure includes hardware, software, communications, consumer energy displays and controllers, customer associated systems, meter data management software, and supplier and network distribution systems.",
+            "show" : true
+        }
+    ]
+}
