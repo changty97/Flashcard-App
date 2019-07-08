@@ -1,7 +1,6 @@
 #app {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #2c3e50;
     }
     
     h1, h2 {
@@ -27,8 +26,35 @@
     }
     
     .mobile-container {
-      background-color: rgba(0, 52,77,0.75);
+      background-color: #f0f0f0;
       margin: 0px auto;
+    }
+
+    .responsive {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .container {
+      height: 150px;
+    }
+
+    .searchbar {
+      padding: 6px 10px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    div.ex1 {
+      max-width:550px;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+
+    .bottom-nav {
+      background: #FFF;
     }
 
     .topnav {
@@ -66,8 +92,14 @@
       width: 325px;
       height: 45px;
     }
+
+    .arrow {
+      text-align: center;
+      margin-top: -50px;
+      margin-bottom: 25px;
+    }
     
-    .arrow-right {
+    .button {
         width: 65px;
         vertical-align: top;
         display: inline-block;
@@ -75,20 +107,8 @@
         margin-right: 45px; 
     }
 
-    .arrow-right:hover {
-      filter: invert(100%);
-    }
-    
-    .arrow-left {
-        width: 65px;
-        vertical-align: top;
-        display: inline-block;
-        margin-left: 45px;
-        margin-right: 45px; 
-    }
-
-    .arrow-left:hover {
-      filter: invert(100%);
+    .button:hover {
+      filter: invert(50%);
     }
     
     progress[value]{
@@ -96,10 +116,7 @@
         width: 250px;
         height: 20px;
         border-radius: 2px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-        margin-top: 50px;
-        margin-left: 65px;
-        margin-bottom: 15px;
+        box-shadow: 0px 0px 2px 0px #666;
     }
     
     ::-webkit-progress-bar {
@@ -140,9 +157,6 @@
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
             display: inline-block;
-            margin-top: 125px;
-            margin-right: 10px;
-            margin-left: 185px; 
             width: 315px;
             height: 200px;
             left: 50%;
@@ -163,7 +177,6 @@
             transition: all 600ms;
             z-index: 20;
             display: inline-block;
-            margin: 4px;
         }
     
         .card div {
@@ -171,20 +184,24 @@
             height: 100%;
             width: 100%;
             padding: 5px;
+            padding-left: 10px;
             margin-left: -6px;
+            margin-top: -5px;
             background: #FFF;
             text-align: center;
             line-height: 200px;
-            -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             border-radius: 2px;
+            box-shadow: 5px 5px 10px #666;
         }
     
         .card .back {
             background: #222;
             text-align: left;
             margin-left: -6px;
+            margin-top: -5px;
             padding: 5px;
+            padding-left: 10px;
             color: #FFF;
             font-size: 16px;
             -webkit-transform: rotateX(180deg);
@@ -195,7 +212,7 @@
         label:hover .card {
             -webkit-transform: rotateX(20deg);
             transform: rotateX(20deg);
-            box-shadow: 0 20px 20px rgba(50,50,50,.2);
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.918);
         }
     
         .input {
@@ -221,28 +238,5 @@
 
         .flashNum {
           color: black;
-          margin-right: 150px; 
-          margin-left: 175px;
         }
 
-
-
-        @media only screen and (min-width: 768px) {
-          .topnav{
-            width: 100%;
-          }
-          progress[value]{
-            margin-left: 265px;
-            margin-bottom: 35px;
-          }
-          .flashNum{
-            margin-left: -150px;
-          }
-          .body-card{
-            width: 100%;
-            margin-left: 200px;
-          }
-          .arrow-left{
-            margin-left: 235px;
-          }
-        }
