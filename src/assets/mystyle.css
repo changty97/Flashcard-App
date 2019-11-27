@@ -129,7 +129,7 @@
     }
     
     .active {
-      width: 325px;
+      width: 125px;
       height: 45px;
     }
 
@@ -287,12 +287,12 @@
 
         @media screen and (max-width: 770px) {
           .active {
-            width: 190px;
+            width: 90px;
           }
         }
 
         @media screen and (max-width: 470px) {
           .active {
-            width: 350px;
+            width: 70px;
           }
         }
