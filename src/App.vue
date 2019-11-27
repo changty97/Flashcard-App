@@ -10,7 +10,8 @@
 
           <div :style="display">
             <a href="/">{{ menu_op1 }}</a>
-            <a href="#Help">{{ menu_op2 }}</a>
+            <a id="course" style="display: block" @click="byCourse()">{{ menu_op2 }}</a>
+            <a id="alpha" @click="byAlpha()">{{ menu_op3 }}</a>
           </div>
           <a href="javascript:void(0);" class="icon" v-on:click="menu()">
             <i class="fa fa-bars"></i>
@@ -30,7 +31,8 @@ export default {
     return {
       display: 'display: none',
       menu_op1: 'Dashboard',
-      menu_op2: 'Help'
+      menu_op2: 'By Course',
+      menu_op3: 'Alphabetical',
     }
   },
   methods: {
@@ -43,7 +45,21 @@ export default {
       {
         this.display = 'display: block'
       }
-    }
+    },
+
+    byCourse: function () {
+      if (document.getElementById('course'))
+      {
+          document.getElementById('course').outerHTML += '<div id="courseTitles" style="display: block; background-color: grey; padding-left: 15px"><a>Water 1</a><a>Water 2</a><a>Small Water</a><a>Water Distribution</a><a>Small Wastewater Systems 1</a><a>Small Wastewater Systems 2</a><a>Wastewater 1</a><a>Wastewater 2</a><a>Collections 1</a><a>Collections 2</a><a>Industrial Waste Treatment 1</a><a>Industrial Waste Treatment 2</a></div>'
+      }
+    },
+
+    byAlpha: function () {
+      if (document.getElementById('alpha'))
+      {
+        document.getElementById('alpha').outerHTML += '<div style="background-color: grey; padding-left: 15px"><a>A</a><a>B</a><a>C</a><a>D</a><a>E</a><a>F</a><a>G</a><a>H</a><a>I</a><a>J</a><a>K</a><a>L</a><a>M</a><a>N</a><a>O</a><a>P</a><a>Q</a><a>R</a><a>S</a><a>T</a><a>U</a><a>V</a><a>W</a><a>X</a><a>Y</a><a>Z</a></div>'
+      }
+    },
   }
 }
 </script>
@@ -186,7 +202,7 @@ div.ex1 {
 
 .arrow {
   text-align: center;
-  margin-top: -50px;
+  margin-top: -250px;
   margin-bottom: 25px;
 }
 
@@ -247,8 +263,8 @@ label {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   display: inline-block;
-  width: 315px;
-  height: 200px;
+  width: 725px;
+  height: 580px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -340,11 +356,21 @@ label:hover :checked + .card {
   .active {
     width: 90px;
   }
+  
+  label {
+    width: 525px;
+    margin-right: 200px;
+  }
 }
 
 @media screen and (max-width: 470px) {
   .active {
     width: 70px;
+  }
+
+  label {
+    width: 325px;
+    margin-right: 400px;
   }
 }
 </style>
