@@ -277,7 +277,8 @@ label:hover :checked + .card {
 }
 
 .flashNum {
-  color: black;
+  text-align: center; 
+  margin-top: 10px;
 }
 
 .smallLogo {
@@ -309,5 +310,32 @@ label:hover :checked + .card {
   .bottom-nav {
     width: 350px;
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .card {
+    margin-top: -40px;
+  }
+
+  label {
+    height: 500px;
+  }
+
+  .flashNum {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  label {
+    width: 280px;
+    height: 450px;
+    margin-top: -25px;
+    margin-right: 440px;
+  }
+
+  .flashNum {
+    margin-top: -20px;
   }
 }
