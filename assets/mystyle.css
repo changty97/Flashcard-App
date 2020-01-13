@@ -1,4 +1,4 @@
-#app {
+#glossary-flashcard {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -89,7 +89,56 @@ div.ex1 {
   box-shadow: 0px 0px 2px 0px #666;
   padding: 5px;
   width: 20px;
-  height: 50px;
+  height: 30px;
+}
+
+.sidenav {
+  height: calc(100vh);
+  width: 0;
+  position: absolute;
+  z-index: 5;
+  top: 151px;
+  left: 0;
+  background: rgba(247, 247, 247, 0.98);
+  /*overflow-x: hidden;*/
+  overflow: auto;
+  transition: width 0.5s;
+  padding-top: 60px;
+  border-right: 1px solid #70BF49;
+}
+
+.sidenav a {
+  padding: 0;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(38, 78, 68, 1.0);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #70BF49;
+}
+
+.sidenav li {
+  padding: 4px 8px 4px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav li:hover, .offcanvas li:focus {
+  color: #70BF49;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .bottom-nav {
@@ -131,6 +180,7 @@ div.ex1 {
 .active {
   width: 125px;
   height: 45px;
+  margin-top: -13px;
 }
 
 .arrow {
@@ -277,13 +327,17 @@ label:hover :checked + .card {
 }
 
 .flashNum {
-  text-align: center; 
-  margin-top: 10px;
+  color: black;
 }
 
 .smallLogo {
   /* background-image: url(./asset/image/owp-symbol-wht); */
   height: 45px;
+}
+
+.display_alpha {
+  background-color: grey; 
+  padding-left: 15px;
 }
 
 @media screen and (max-width: 770px) {
@@ -311,31 +365,10 @@ label:hover :checked + .card {
     width: 350px;
     height: 100px;
   }
-}
 
-@media screen and (max-width: 455px) {
-  .card {
-    margin-top: -40px;
-  }
-
-  label {
-    height: 500px;
-  }
-
-  .flashNum {
-    margin-top: -20px;
-  }
-}
-
-@media screen and (max-width: 325px) {
-  label {
-    width: 280px;
-    height: 450px;
-    margin-top: -25px;
-    margin-right: 440px;
-  }
-
-  .flashNum {
-    margin-top: -20px;
+  .display_alpha {
+    background-color: grey; 
+    padding-left: 14px;
+    font-size: 80px;
   }
 }
