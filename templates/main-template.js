@@ -7,7 +7,7 @@ var MainTemplate = `
             <!-- Search Bar -->
             <div style="text-align: center; margin-top: -35px;">
               <img id="searchIcon" src="/img/search.svg" class="searchIcon" @click="openSearch()">
-              <input id="userInput" type="text" v-model="search" id="keywordSearch" placeholder="Search term or definition.." style="margin-bottom: 10px;padding-top: 10px;margin-top: -35px;" class="searchbar">
+              <input type="text" v-model="search" id="keywordSearch" placeholder="Search term or definition.." style="margin-bottom: 10px;padding-top: 10px;margin-top: -35px; margin-left:10px" class="searchbar"></input>
             </div>
 
             <div :style="display_menu">
@@ -47,7 +47,7 @@ var MainTemplate = `
       <!-- raw HTML omitted -->
 
       <a href=".#/courses">
-        <div class="columns large-3 medium-12 strm-panel">
+        <div class="flashcard_main columns large-3 medium-12 strm-panel">
           <div style="min-height: 430px;margin-top: 70px;margin-bottom: 70px;" class="thumbnail">
             <!-- <img src="/" alt="Image" width="100%"> -->
             <div class="panel-content">
@@ -57,8 +57,7 @@ var MainTemplate = `
         </div>
       </a>
 
-
-        <a href=".#/alphabetical"><div class="columns large-3 medium-12 strm-panel">
+        <a href=".#/alphabetical"><div class="flashcard_main columns large-3 medium-12 strm-panel">
             <div style="min-height: 430px;margin-top: 70px;margin-bottom: 70px;" class="thumbnail">
               <!-- <img src="/" alt="Image" width="100%"> -->
               <div class="panel-content">

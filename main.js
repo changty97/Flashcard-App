@@ -46,14 +46,16 @@ if(document.getElementById("flashcard-app"))
         get_letter:         [],
         term:               [],
         defsForAlpha:       [],
-        // courses:            [],
-        index:              0
+        letter:             [],
+        index:              0,
+        items: [],
     },
     mounted:function()
     {
         var self                                                    = this;
         self.getAllCourses();
         self.getGlossaryLetterIndex();
+  
     },
     created() {
       window.addEventListener('search', this.openSearch);
@@ -169,11 +171,14 @@ if(document.getElementById("flashcard-app"))
         {
             if(d.response.length > 0){
                 self.alphabetlinks                                  = d.response;
+                EventBus.$emit("first_letter_event", self.alphabetlinks);         
 
-                // for(var first_letter = 0; first_letter < self.alphabetlinks.length; first_letter++)
-                // {
-                  EventBus.$emit("first_letter_event", self.alphabetlinks); 
-                // }
+                for(self.index = 0; self.index < self.alphabetlinks.length; self.index++)
+                {
+                  self.letter[self.index] = self.alphabetlinks[self.index];
+                  self.getTermList(self.letter[self.index]);
+                } 
+                
               }
             else
                 console.log('Query failed to return a term. The database may be down. Please comeback at a later time.');            
@@ -200,6 +205,7 @@ if(document.getElementById("flashcard-app"))
                           self.get_letter[self.index] = self.gloss[self.index].term;
                           self.getDefinition(self.gloss[self.index].id);
                         }
+                        self.autoComplete(self.get_letter);
                         EventBus.$emit("listener-letter-event", self.get_letter);
                         EventBus.$emit("letterLength", self.gloss.length);
                     }
@@ -250,6 +256,14 @@ if(document.getElementById("flashcard-app"))
               }
               searchIcon.style.display = 'none';
           }
+        },
+        autoComplete: function(arr) {
+          $( function() {
+            $( "#keywordSearch" ).autocomplete({
+              source: arr
+            });
+          } );
+      
         }
     }
   })
