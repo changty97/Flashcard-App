@@ -28,9 +28,9 @@ const FlashcardTemplate = `
       <!-- Right and left Arrows to Navigate through Words and Definitions-->
       <div class="arrow-flashcard">
           <!-- <img @click="backFlashcard()" class="flashcard-button" src=""> -->
-          <b @click="backFlashcard()" >PREV</b>
+          <b @click="backFlashcard()" class="fas fa-angle-left" style="display: block; font-size:50px;margin-left: -200px;"></b>
           <!-- <img @click="changeFlashcard()" class="flashcard-button" src=""> -->
-          <b @click="changeFlashcard()" >NEXT</b>
+          <b @click="changeFlashcard()" class="fas fa-angle-right" style="display: block;font-size: 50px;margin-left: 200px;margin-top: -50px;"></b>
       </div>
 
       <!-- Bottom Navigation -->

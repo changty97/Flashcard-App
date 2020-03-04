@@ -55,7 +55,7 @@ if(document.getElementById("flashcard-app"))
         var self                                                    = this;
         self.getAllCourses();
         self.getGlossaryLetterIndex();
-  
+        
     },
     created() {
       window.addEventListener('search', this.openSearch);
@@ -205,7 +205,7 @@ if(document.getElementById("flashcard-app"))
                           self.get_letter[self.index] = self.gloss[self.index].term;
                           self.getDefinition(self.gloss[self.index].id);
                         }
-                        self.autoComplete(self.get_letter);
+                        // self.autoComplete(self.get_letter);
                         EventBus.$emit("listener-letter-event", self.get_letter);
                         EventBus.$emit("letterLength", self.gloss.length);
                     }
